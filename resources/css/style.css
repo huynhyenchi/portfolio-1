@@ -181,7 +181,7 @@ img {
     background-color: hsla(var(--hue), 70%, 4%, 0.2);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    width: 70%;
+    width: 75%;
     height: 100%;
     padding: 7rem 3rem;
     transition: right 0.4s;
@@ -224,7 +224,18 @@ img {
   right: 0;
 }
 /* Add blur header */
-
+.blur-header::after {
+  content: '';
+  position: absolute;
+  width: 1000%;
+  height: 100%;
+  background-color: hsla(var(--hue), 70%, 4%, 0.2);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  top:0;
+  left:0;
+  z-index: -1;
+}
 /* Active link */
 
 /*=============== HOME ===============*/
@@ -239,12 +250,107 @@ img {
               hsla(var(--hue), 40%, 16%), 70%,
               transparent 100%);
 }
-/* Animate scroll icon */
 
+.home__name {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-bold);
+  word-break: break-word;
+  margin-bottom: 1rem;
+}
+
+.home__profession {
+  position: relative;
+  font-size: var(--big-font-size);
+  color: var(--text-color);
+}
+.home__profession::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -.5rem;
+  width: 25%;
+  height: 2px;
+  background-color: var(--text-color);
+}
+
+.home__scroll {
+  color: var(--title-color);
+  display: inline-flex;
+  column-gap: .5rem;
+  align-items: center;
+  justify-self: center;
+  margin-top: 3rem;
+}
+
+.home__scroll-box {
+    background-color: var(--first-color);
+    width: 32px;
+    height: 32px;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    overflow: hidden;
+}
+
+.home__scroll-text {
+  font-weight: var(--font-semi-bold);
+}
+
+.home__scroll-box i {
+  animation: scroll-down 2s infinite;
+}
+/* Animate scroll icon */
+@keyframes scroll-down {
+  0% {
+    transform: translateY(-1rem);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(.6rem);
+    opacity: 0;
+  }
+}
 /*=============== BUTTON ===============*/
 
 /*=============== WORKS ===============*/
+.work {
+  background-color: var(--container-color);
+}
 
+.work__card {
+  background-color: var(--first-color);
+}
+
+.work__link {
+  display: block;
+  position: relative;
+  background-color: var(--body-color);
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  color: var(--text-color);
+  transition: transform  .4s;
+}
+
+.work__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: .75rem;
+}
+
+.work__description {
+  margin-bottom: 1.5rem;
+}
+
+.work__link i {
+  position: absolute;
+  top: 1.8rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--first-color-light);
+  transition: transform .4s;
+}
 /*=============== INFO ===============*/
 
 /* ABOUT */

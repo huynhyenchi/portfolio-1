@@ -31,7 +31,7 @@ Recent Projects
 
 ========== WORK ==========
 .section__title
-RECENT WORKS
+RECENT PROJECTS
 
 .work__title
 Coffe Website

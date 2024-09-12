@@ -26,8 +26,15 @@ const linkAction = () => {
 };
 //When I click on any nav__link, it will be implemented linkAction function
 navLink.forEach((n) => n.addEventListener("click", linkAction));
-/*=============== ADD BLUR HEADER ===============*/
 
+/*=============== ADD BLUR HEADER ===============*/
+const blurHeader = () => {
+  const header = document.getElementById('header')
+  // add blur-header selector if the bottom offset is greater than 50px of the viewport
+  this.scrollY >= 50 ? header.classList.add('blur-header')
+                     : header.classList.remove('blur-header')
+}
+window.addEventListener('scroll', blurHeader)
 /*=============== EMAIL JS ===============*/
 
 /*=============== SHOW SCROLL UP ===============*/

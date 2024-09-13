@@ -50,8 +50,8 @@ MY INFO
 About Me
 
 .about__description
-Strongly eager about creating <b>websites with beautiful interfaces and smooth animations</b>.
-I have completed many <br>side frontend projects</br> during my self-learning journey.
+Strongly eager about creating</br>websites with beautiful interfaces and smooth animations.</br>
+I have completed many</br>side frontend projects</br>during my self-learning journey.
 
 .about__button
 Download CV

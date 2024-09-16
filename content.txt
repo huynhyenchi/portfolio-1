@@ -148,7 +148,7 @@ Email: {{user_email}}
 
 Message: {{user_message}}
 
-Best wishes,
+Warmest wishes,
 EmailJS team
 
 

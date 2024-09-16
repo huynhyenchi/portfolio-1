@@ -184,7 +184,7 @@ img {
     width: 78%;
     height: 100%;
     padding: 7rem 3rem;
-    transition: right 0.4s;
+    transition: right .3s;
   }
 }
 .nav__list {
@@ -196,7 +196,7 @@ img {
   position: relative;
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
-  transition: color 0.4s;
+  transition: color .3s;
 }
 .nav__link::after {
   content: "";
@@ -206,7 +206,7 @@ img {
   position: absolute;
   left: 0;
   bottom: -0.5rem;
-  transition: width 0.3s;
+  transition: width .3s;
 }
 .nav__link:hover {
   color: var(--first-color-light);
@@ -322,7 +322,7 @@ img {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
   padding: 1.25rem 2rem;
-  transition: background-color .4s;
+  transition: background-color .3s;
 }
 
 .button:hover {
@@ -343,7 +343,7 @@ img {
   background-color: var(--body-color);
   padding: 2rem 1.5rem 1.5rem 1.5rem;
   color: var(--text-color);
-  transition: transform  .4s;
+  transition: transform  .3s;
 }
 
 .work__title {
@@ -361,7 +361,7 @@ img {
   right: 1.5rem;
   font-size: 1.5rem;
   color: var(--first-color-light);
-  transition: transform .4s;
+  transition: transform .3s;
 }
 
 .work__link:hover {
@@ -488,7 +488,75 @@ img {
   margin-bottom: .75rem;
 }
 /*=============== CONTACT ===============*/
+.contact__container {
+  row-gap: 4rem;
+}
 
+.contact__group,
+.contact__form {
+  gap: 1rem;
+}
+
+.contact__form {
+  position: relative;
+}
+
+.contact__input {
+  padding: 1.25rem;
+  background-color: var(--container-color);
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+.contact__input::placeholder {
+  color: var(--text-color-light);
+}
+
+.contact__area {
+  height: 10rem;
+  resize: none;
+}
+
+.contact__button {
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.contact__social {
+  grid-template-columns: repeat(2, max-content);
+  justify-content: center;
+  column-gap: 3rem;
+}
+
+.contact__social-link {
+  color: var(--title-color);
+  display: inline-flex;
+  column-gap: .25rem;
+  align-items: center;
+  transition: color .3s;
+}
+
+.contact__social-link:hover {
+  color: var(--first-color-light);
+}
+
+.contact__social-link i {
+  font-size: 1.25rem;
+}
+
+.contact__social-link span {
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+}
+
+.contact__message {
+  position: absolute;
+  left: 0;
+  bottom: -2rem;
+  font-size: var(--small-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color);
+}
 /*=============== FOOTER ===============*/
 
 /*=============== SCROLL BAR ===============*/

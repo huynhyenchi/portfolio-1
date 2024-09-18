@@ -464,7 +464,6 @@ img {
 
 .skills__box:hover {
   transform: translateY(-.25rem);
-  cursor: pointer;
 }
 /*=============== SERVICES ===============*/
 .services {
@@ -558,11 +557,71 @@ img {
   color: var(--title-color);
 }
 /*=============== FOOTER ===============*/
+.footer {
+  background-color: var(--container-color);
+}
 
+.footer__container {
+  padding-block: 3rem 2rem;
+  row-gap: 3rem;
+}
+
+.footer__list {
+  display: flex;
+  justify-content: center;
+  column-gap: 2.5rem;
+}
+
+.footer__link {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  transition: color .3s;
+}
+
+.footer__link:hover {
+  color: var(--first-color-light);
+}
+
+.footer__copy {
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+  text-align: center;
+}
 /*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: .6rem;
+  background-color: hsl(var(--hue), 20%, 20%);
+}
 
+::-webkit-scrollbar-thumb {
+  background-color: hsl(var(--hue), 20%, 30%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(var(--hue), 20%, 40%);
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: hsl(var(--hue), 20%, 45%);
+}
 /*=============== SCROLL UP ===============*/
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -50%;
+  background-color: var(--container-color);
+  display: inline-flex;
+  padding: 6px;
+  color: var(--title-color);
+  font-size: 1.25rem;
+  box-shadow: 0 4px 12px hsla(var(--hue), 30%, 8%, .3);
+  z-index: var(--z-tooltip);
+  transition: bottom .3s, transform .3s;
+}
 
+.scrollup:hover {
+  transform: translateY(-.5rem);
+}
 /* Show Scroll Up */
 
 /*=============== BREAKPOINTS ===============*/

@@ -237,7 +237,12 @@ img {
   z-index: -1;
 }
 /* Active link */
-
+.active-link {
+  color: var(--first-color-light);
+}
+.active-link::after {
+  width: 30%;
+}
 /*=============== HOME ===============*/
 .home__container {
   row-gap: 2rem;
@@ -623,7 +628,9 @@ img {
   transform: translateY(-.5rem);
 }
 /* Show Scroll Up */
-
+.show-scroll {
+  bottom: 3rem;
+}
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 

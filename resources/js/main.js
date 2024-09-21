@@ -104,7 +104,7 @@ const scr = ScrollReveal({
 
 scr.reveal(`.home__data, .experience, .skills, .contact__container`)
 scr.reveal(`.home__img`, {delay: 400})
-scr.reveal(`.home__scroll`, {delay: 1500})
+scr.reveal(`.home__scroll`, {delay: 600})
 scr.reveal(`.work__card, .services__card`, {interval: 100})
 scr.reveal(`.about__content`, {origin: 'right'})
 scr.reveal(`.about__img`, {origin: 'left'})

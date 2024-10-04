@@ -97,14 +97,14 @@ window.addEventListener('scroll', scrollActive)
 const scr = ScrollReveal({
   origin: 'top',
   distance: '60px',
-  duration: 2000,
-  delay: 400,
+  duration: 1500,
+  delay: 300,
   // reset: true // Animations repeat
 })
 
 scr.reveal(`.home__data, .experience, .skills, .contact__container`)
 scr.reveal(`.home__img`, {delay: 400})
-scr.reveal(`.home__scroll`, {delay: 600})
-scr.reveal(`.work__card, .services__card`, {interval: 100})
+scr.reveal(`.home__scroll`, {delay: 100})
+scr.reveal(`.work__card, .services__card`, {interval: 400})
 scr.reveal(`.about__content`, {origin: 'right'})
 scr.reveal(`.about__img`, {origin: 'left'})

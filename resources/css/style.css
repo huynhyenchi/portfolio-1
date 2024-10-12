@@ -302,7 +302,7 @@ img {
 }
 
 .home__scroll-box i {
-  animation: scroll-down 2s infinite;
+  animation: scroll-down 1.5s infinite;
 }
 /* Animate scroll icon */
 @keyframes scroll-down {
